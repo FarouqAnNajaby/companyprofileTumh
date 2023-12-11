@@ -42,13 +42,23 @@
   ============================-->
 		<section id="topbar" class="d-none d-lg-block">
 			<div class="container clearfix">
-				<div class="contact-info float-left"><i class="fa fa-envelope-o"></i> <a href="mailto:Tumh.indonesia@gmail.com?subject=Saya ingin bergabung dengan Tumh">Tumh.indonesia@gmail.com</a> <i class="fa fa-phone"></i><a href="https://wa.me/6282140374621/?text=Saya ingin bergabung dengan Tumh">+6282140374621</a></div>
+				<div class="contact-info float-left">
+					<i class="fa fa-envelope-o"></i><a href="mailto:Tumh.indonesia@gmail.com?subject=Saya ingin bergabung dengan Tumh">Tumh.indonesia@gmail.com</a> 
+					<i class="fa fa-phone"></i><a href="https://wa.me/6282140374621/?text=Saya ingin bergabung dengan Tumh">+6282140374621</a>
+					</div>
 				<div class="social-links float-right">
 					<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
 					<a href="https://www.linkedin.com/company/tumh/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+					<div id="google_translate_element" class="contact-info float-left"></div>
 				</div>
 			</div>
 		</section>
+		<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslate"></script>
+		<script>
+			function googleTranslate(){
+				new google.translate.TranslateElement({pageLanguange: 'idn'},'google_translate_element');
+			}
+		</script>
 
 		<!--==========================
     Header
@@ -114,16 +124,24 @@
 	<section id="thumbnail" class="wow fadeInUp">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 about-img">
-					<img src="img/thumbnail.png" alt="" />
-				</div>
-				<div class="col-lg-4 content">
+				<div class="content">
 					<h2>Kenalan dulu yuk sama Tumh...</h2>
-					<iframe width="480" height="200"
-						src="https://www.youtube.com/embed/tgbNymZ7vqY">
-					</iframe>
-					<button class="btn info">Lihat Pitch Deck</button>
 				</div>
+				<div class="" id="content-thumbnail">
+					<div class="thumbnail-img" >
+						<img src="img/thumbnail.png" alt="" />
+					</div>
+					<div class="thumbnail-video">
+						<iframe width="500" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+						<a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download="Pitch Deck Tumh.pdf">
+							<button class="btn info" translate="yes">Lihat Pitch Deck </button>
+						</a>
+					
+					</div>
+				</div>
+				<!-- <div class="col-lg-4 content">
+					
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -160,7 +178,7 @@
 			<section id="services">
 				<div class="container">
 					<div class="section-header">
-						<h2>Services</h2>
+						<h2>Layanan</h2>
 					</div>
 
 					<div class="row">
@@ -405,7 +423,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-9 text-center text-lg-left">
-							<h3 class="cta-title">Call To Action</h3>
+							<h3 class="cta-title">Hubungi Kami</h3>
 							<p class="cta-text">Mari bergabung dengan kami untuk membantu mewujudkan mimpi masyarakat untuk pergi ke tanah suci mekkah madinah.</p>
 						</div>
 						<div class="col-lg-3 cta-btn-container text-center">
@@ -422,10 +440,10 @@
 			<section id="team" class="wow fadeInUp">
 				<div class="container">
 					<div class="section-header">
-						<h2>Our Team</h2>
+						<h2>Tim Kami</h2>
 					</div>
 					<div class="row">
-						<div class="col-lg-4 col-md-3">
+						<div class="col-lg-6 col-md-3">
 							<div class="member">
 								<div class="pic"><img src="img/team-1.jpg" alt="" /></div>
 								<div class="details">
@@ -439,7 +457,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-3">
+						<div class="col-lg-6 col-md-3">
 							<div class="member">
 								<div class="pic"><img src="img/team-2.jpg" alt="" /></div>
 								<div class="details">
@@ -453,7 +471,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-3">
+						<div class="col-lg-6 col-md-3">
 							<div class="member">
 								<div class="pic"><img src="img/team-3.jpg" alt="" /></div>
 								<div class="details">
@@ -462,6 +480,19 @@
 									<div class="social">
 										<a href=""><i class="fa fa-linkedin"></i></a>
 										<a href="mailto:zfrputri@gmail.com"><i class="fa fa-envelope-o"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-3">
+							<div class="member">
+								<div class="pic"><img src="img/team-4.jpg" alt="" /></div>
+								<div class="details">
+									<h4>Rudy Tambudy</h4>
+									<span>Chief Financial Officer</span>
+									<div class="social">
+										<a href=""><i class="fa fa-linkedin"></i></a>
+										<a href="mailto:rudyesc26@gmail.com"><i class="fa fa-envelope-o"></i></a>
 									</div>
 								</div>
 							</div>
@@ -484,7 +515,7 @@
 					<div class="row contact-info">
 						<div class="col-md-4">
 							<div class="contact-address">
-								<i class="ion-ios-location-inline"></i>
+								<i class="ion-ios-location-outline"></i>
 								<h3>Alamat</h3>
 								<address>Surabaya, Indonesia</address>
 							</div>
@@ -548,7 +579,7 @@
   ============================-->
 		<footer id="footer">
 			<div class="container">
-				<div class="copyright">&copy; Copyright <strong>Tumh</strong>. All Rights Reserved</div>
+				<div class="copyright">&copy; 2023 <strong>PT. Tumh</strong>. All Rights Reserved</div>
 			</div>
 		</footer>
 		<!-- #footer -->
@@ -556,7 +587,7 @@
 		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 		<!-- JavaScript Libraries -->
-		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/jquery/jquery.min.js"></sc>
 		<script src="lib/jquery/jquery-migrate.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<script src="lib/easing/easing.min.js"></script>

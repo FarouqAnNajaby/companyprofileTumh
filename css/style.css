@@ -50,10 +50,10 @@ p {
 	height: min-content;
   }
   
-#thumbnail .about-img {
-	overflow: hidden;
-  }
-
+#thumbnail .thumbnail-img {
+	/* overflow: hidden; */
+	display: flex;
+}
 #thumbnail .info {
   border-color: #2196F3;
   color: dodgerblue
@@ -64,18 +64,11 @@ p {
   color: white;
 }
   
-#thumbnail .about-img img {
-	/* margin-left: -20%; */
-	height: 100%;
-	max-width: 150%;
-	margin-right: 20%;
-  }
-  
 #thumbnail .content h2 {
 	color: #0c2e8a;
 	font-weight: 700;
 	font-size: 36px;
-	font-family: "Raleway", sans-serif;
+	font-family: "Montserrat", sans-serif;
   }
   
 #thumbnail .content h3 {
@@ -619,6 +612,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-img img {
   margin-left: -15px;
+  margin-bottom: -20%;
   max-width: 100%;
 }
 
@@ -1127,6 +1121,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
+
 }
 
 @media (min-width: 769px) {
@@ -1181,6 +1176,51 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-bottom: 30px;
   }
 }
+@media (min-width: 360px) {
+	#thumbnail .thumbnail-img img{
+		
+		max-width: 100%;
+		height: auto;
+	  }
+	  #thumbnail {
+		padding: 0px 0 0px 0;
+		display: inline;
+		margin-top: 5%;
+	  }
+	  #thumbnail .container .row .content h2 {
+		text-align: center;
+		margin-top: 8%;
+		padding:0px
+	  }
+	  #thumbnail .thumbnail-video iframe {
+		
+		max-width: 100%;
+		height: 20%;
+	  }
+}
+
+@media (min-width: 767px) {
+	#thumbnail {
+	  margin-top: 5%;
+	}
+	#thumbnail .thumbnail-img img{		
+		max-width: 100%;
+		height: auto;
+	  }
+	  #content-thumbnail {
+		display: flex;
+	  }
+	  #thumbnail .container .row .content h2 {
+		text-align: center;
+		margin-top: 8%;
+		padding:0px
+	  }
+	  #thumbnail .thumbnail-video iframe {
+		
+		max-width: 100%;
+		height: auto;
+	  }
+}
 
 @media (max-width: 767px) {
   #intro .intro-content h2 {
@@ -1206,6 +1246,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   #testimonials .testimonial-item {
     margin: 30px 10px;
   }
+
+
 }
 
 @media (max-width: 576px) {

@@ -942,7 +942,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .pic img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 #team .member .details {
@@ -1219,8 +1219,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 		padding:0px
 	  }
 	  #thumbnail .thumbnail-video iframe {
-		max-width: 1200px;
-		height: 50%;
+		max-width: 2500px;
+		height: 86%;
 	  }
 }
 
